@@ -1,0 +1,23 @@
+body{
+    background-image: url("https://blog.dheerajverma.in/wp-content/uploads/2018/10/css-gradient-e1595456078187.jpg");
+}
+
+h1{
+    color: #FFFF;
+    font-size: 60px;
+    font-family: system-ui;
+}
+
+input{
+    font-family: system-ui;
+    font-size: 25px;
+    color: #000000;
+    border-radius: 10px;
+}
+
+button{
+    font-family: system-ui;
+    font-size: 20px;
+    color: white;
+    background-color: blueviolet;
+}

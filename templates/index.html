@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <center><h1><b>Previsão de situação do estoque</b></h1>
+    </center>
+    <center>
+        <form action="{{url_for('predict')}}" method = "post">
+            <br>
+            <input type="text", name="Qtd de arroz", placeholder="Qtd de arroz", required = 'required'>
+            <br>
+            <br>
+            <input type="text", name="Qtd de feijão", placeholder="Qtd de feijão", required = 'required'>
+            <br>
+            <br>
+            <input type="text", name="Qtd de biscoito", placeholder="Qtd de biscoito", required = 'required'>
+            <br>
+            <br>
+            <input type="text", name="Qtd de flocão", placeholder="Qtd de flocão", required = 'required'>
+            <br>
+            <br>
+            <button type="submit">Prever</button>
+        </form>
+        <br>
+        <br>
+        <h2>{{prediction_text}}</h2>
+    </center>
+</body>
+</html>
