@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
 
-dados = pd.read_csv('Dados\dado_fake.csv.csv')
+dados = pd.read_csv('Dados\dado_fake.csv')
 
 x = dados.iloc[:, :-1]
 y = dados.iloc[:, -1]
